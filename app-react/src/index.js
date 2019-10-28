@@ -7,9 +7,10 @@ import Clock from './Clock';
 import Props from './Props';
 import State from './State';
 import OtherClock from './OtherClock';
+import Events from './Events';
 import * as serviceWorker from './serviceWorker';
 
 //ReactDOM.render(<Props attr='p' attr1='VALUE1' attr2='VALUE2' />, document.getElementById('root'));
-ReactDOM.render(<OtherClock />, document.getElementById('root'));
+ReactDOM.render(<Events />, document.getElementById('root'));
 
 serviceWorker.unregister();
