@@ -1,18 +1,22 @@
-import React, { Component } from 'react';
+import React, {
+	Component
+} from 'react';
 
 
 export default class Clock extends Component {
-  render() {
-	return (
-		<h1>
-			{
-				new Date().toLocaleString('en-US',{
+	render() {
+		const returnClock = () => {
+				return new Date().toLocaleString('en-US', {
 					hour: 'numeric',
 					minute: 'numeric',
 					hour12: true
 				})
 			}
-		</h1>
-	);
-  }
+		return ( 
+			<h1> {
+					returnClock()
+				} 
+			</h1>
+		);
+	}
 }
