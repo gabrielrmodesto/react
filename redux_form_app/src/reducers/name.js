@@ -1,4 +1,4 @@
-import { INITIAL_FETCH, SEND_SERVER } from '../actions';
+import { INITIAL_FETCH, SEND_SERVER } from './../actions';
 const INITIAL_STATE = { data: {} };
 
 export default function reducerName(state = INITIAL_STATE, action){

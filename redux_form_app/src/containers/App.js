@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import InitForm from '../components/InitForm';
-import { sendServer } from '../actions';
+import InitForm from './../components/InitForm';
+import { sendServer } from './../actions';
 import { connect } from 'react-redux';
 
 //container

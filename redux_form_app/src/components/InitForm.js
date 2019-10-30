@@ -33,19 +33,17 @@ const validate = (values) => {
     if(!name){
         errors.name = 'Required';
     }
-    
-
     return errors;
 }
 
 class InitForm extends Component{
-    componentDidMount(){
+    componentWillMount(){
         this.props.fetchInitial();
     }
     render (){
         const { onClick, onChangeName } = this.props;
         return(
-            <form action="">
+            <form>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
                     <Field 
@@ -58,7 +56,7 @@ class InitForm extends Component{
                     />
                 </div>
                 <div className="form-group">
-                    <button className="btn btn-primary btn-block" onClick={(event) => onClick(event, this.propsinitialValues)}>Send</button>
+                    <button className="btn btn-primary btn-block" onClick={(event) => onClick(event, this.props.initialValues)}>Send</button>
                 </div>
             </form>
         )
