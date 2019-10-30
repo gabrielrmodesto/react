@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import InitForm from '../components/InitForm';
+import { sendServer } from '../actions';
+import { connect } from 'react-redux';
 
 //container
-export default class App extends Component {
-	onClick = (event) => {
+class App extends Component {
+	onClick = (event, data) => {
 		event.preventDefault();
-		console.log('Clicked here');
+		console.log('Clicked here', data);
+		this.props.createName(data);
 	}
 	onChangeName = ({ target }) => {
 		const { name, value } = target;
@@ -32,3 +35,16 @@ export default class App extends Component {
 		);
 	}
 }
+
+const mapStateToProps = (state) => {
+    return {
+        initialValues: state.name.data
+    }
+};
+const mapDispatchToProps = (dispatch) =>{
+    return {
+		createName: (data) => dispatch(sendServer(data))
+    }
+    
+}
+export default connect(mapStateToProps,mapDispatchToProps)(App);

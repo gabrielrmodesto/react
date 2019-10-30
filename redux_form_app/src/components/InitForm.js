@@ -39,7 +39,7 @@ const validate = (values) => {
 }
 
 class InitForm extends Component{
-    componentWillMount(){
+    componentDidMount(){
         this.props.fetchInitial();
     }
     render (){
@@ -58,7 +58,7 @@ class InitForm extends Component{
                     />
                 </div>
                 <div className="form-group">
-                    <button className="btn btn-primary btn-block" onClick={onClick}>Send</button>
+                    <button className="btn btn-primary btn-block" onClick={(event) => onClick(event, this.propsinitialValues)}>Send</button>
                 </div>
             </form>
         )
