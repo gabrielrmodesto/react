@@ -1,4 +1,4 @@
-import { INITIAL_FETCH } from './actions';
+import { INITIAL_FETCH } from '../actions';
 const INITIAL_STATE = { data: {} };
 
 export default function reducerName(state = INITIAL_STATE, action){
