@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './components/home/home';
 import Contact from './components/contact/contact';
 import { Container } from 'react-materialize';
-import { Switch,Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 const Main = () => (
     <main>
