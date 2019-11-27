@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import './App.css';
-
-function App() {
+class App extends Component {
+  componentDidMount() {
+    console.log('Mounted');
+    this.props.fetchData();
+  }
   return (
-    <div className="App">
-      
+    <div>
     </div>
   );
+}
+
+const mapStateToProps = (state) => {
+  return {
+    data: state.data
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+   // fetchData: () => dispatch(fn)
+  }
 }
 
 export default App;
