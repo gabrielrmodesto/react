@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { dispatch } from 'rxjs/internal/observable/pairs';
 
 // action types
 export const IS_FETCHING = 'IS_FETCHING';

@@ -12,7 +12,6 @@ console.log(store.getState());
 
 render(
     <Provider store={store}>
-        <h1>Hello</h1>
         <App />
     </Provider>
     , document.getElementById('root')
