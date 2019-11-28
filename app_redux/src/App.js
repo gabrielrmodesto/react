@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { thunkFetchData, isFetching } from './actions/app';
+import { thunkFetchData } from './actions/app';
 
 class App extends Component {
   componentDidMount() {
