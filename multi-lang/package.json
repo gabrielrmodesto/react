@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "i18next": "^19.3.4",
     "i18next-browser-languagedetector": "^4.0.2",
-    "i18next-locize-backend": "^3.0.3",
+    "i18next-locize-backend": "^9.0.2",
     "locize-editor": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
